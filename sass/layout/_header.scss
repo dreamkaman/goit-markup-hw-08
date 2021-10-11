@@ -1,0 +1,16 @@
+.header-content {
+  border-bottom: solid 1px;
+  border-bottom-color: $header-line-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.header-content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

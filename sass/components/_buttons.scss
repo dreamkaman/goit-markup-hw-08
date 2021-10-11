@@ -1,0 +1,35 @@
+.base-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.hero__base-button {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $main-white;
+  background-color: $main-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

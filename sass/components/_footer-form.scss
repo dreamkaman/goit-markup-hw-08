@@ -1,0 +1,73 @@
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  padding-top: 16px;
+  padding-right: 15px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+
+  margin: 0;
+
+  border-radius: 4px;
+
+  border: 1px solid $main-gray;
+  background-color: transparent;
+
+  color: $main-white;
+
+  &:focus {
+    outline: none;
+    color: $main-white;
+    border: 1px solid $main-blue;
+    background-color: transparent;
+
+    &:not(:placeholder-shown):invalid {
+      border: 1px solid rgba(255, 0, 0, 0.3);
+    }
+
+    &:not(:placeholder-shown):valid {
+      border: 1px solid rgba(0, 255, 0, 0.3);
+    }
+  }
+}
+
+.footer-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-form__base-button {
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: $main-white;
+  background-color: $main-blue;
+
+  &:hover,
+  &:focus {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $hover-blue;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url('../images/icon-send.svg');
+    background-size: contain;
+  }
+}
