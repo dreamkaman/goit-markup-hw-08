@@ -10,12 +10,36 @@
 }
 
 .header-content__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // margin-right: 93px;
   color: $logo-black;
 }
 
 .logo__text-blue {
   color: $main-blue;
 }
+
+@media screen and (min-width: 768px) {
+}
+// .logo {
+//   display: inline-block;
+
+//   font-family: Raleway, sans-serif;
+//   font-weight: 700;
+//   font-size: 26px;
+//   letter-spacing: 0.03em;
+//   line-height: 1.2;
+//   text-decoration: none;
+// }
+
+// .header-content__logo {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   margin-right: 93px;
+//   color: $logo-black;
+// }
+
+// .logo__text-blue {
+//   color: $main-blue;
+// }
