@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
-  .header-nav {
-    display: none;
-  }
+  // .header-nav {
+  //   display: none;
+  // }
 
   .nav-list {
     display: none;
@@ -12,6 +12,10 @@
   }
 
   .nav-list__link {
+    display: none;
+  }
+
+  .nav-list__link--current {
     display: none;
   }
 }
