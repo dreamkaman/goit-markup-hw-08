@@ -67,6 +67,8 @@
   justify-content: center;
   align-items: center;
 
+  width: 450px;
+
   padding: 40px;
 }
 
@@ -184,10 +186,11 @@
 
 /* =============================================CUSTOM CHECKBOX========================================== */
 .modal-form__checkbox-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 11.8px;
+  font-weight: 400;
   /* line-height: 1.71; */
   line-height: 1;
   color: $main-gray;
@@ -214,8 +217,8 @@
 .modal-form__checbox-wrapper {
   position: relative;
   margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 .modal-form__checkbox {
   position: absolute;
@@ -249,3 +252,338 @@
     background-color: $hover-blue;
   }
 }
+
+// =========================================Mobile-modal====================================
+.backdrop-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-mobile.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $main-white;
+}
+
+.close-btn-mobile {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+
+  background: $main-white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover .close-btn__icon {
+    fill: $main-blue;
+  }
+}
+.close-btn-mobile__icon {
+  width: 11px;
+  height: 11px;
+}
+
+.modal-form-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+// .modal-form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   padding: 40px;
+// }
+
+// .modal-form__header {
+//   margin-top: 0;
+//   margin-bottom: 12px;
+
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.17;
+//   letter-spacing: 0.03em;
+//   text-align: center;
+// }
+
+// .modal-form__field {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+
+//   font-size: 12px;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+
+//   color: $main-gray;
+
+//   & + & {
+//     margin-top: 10px;
+//   }
+// }
+
+// .modal-form__field-content {
+//   display: block;
+//   position: relative;
+//   margin-top: 4px;
+// }
+
+// .modal-form__input {
+//   display: block;
+//   width: 100%;
+//   height: 40px;
+//   margin: 0;
+//   padding-left: 42px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   padding-right: 12px;
+
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 1.14;
+//   letter-spacing: 0.01em;
+
+//   border: 1px solid $black-alfa-02;
+//   border-radius: 4px;
+
+//   &:focus {
+//     outline: none;
+//     border-color: $main-blue;
+
+//     & + .modal-form__field-icon {
+//       fill: $main-blue;
+//     }
+
+//     &:not(:placeholder-shown):invalid {
+//       border: 1px solid rgba(255, 0, 0, 0.3);
+//     }
+
+//     &:not(:placeholder-shown):valid {
+//       border: 1px solid rgba(0, 255, 0, 0.3);
+//     }
+//   }
+// }
+
+// .modal-form__field-icon {
+//   position: absolute;
+//   top: 25%;
+//   left: 12px;
+
+//   width: 18px;
+//   height: 18px;
+// }
+
+// .modal-form__message {
+//   display: block;
+//   resize: none;
+//   height: 120px;
+//   padding-top: 12px;
+//   padding-right: 16px;
+//   padding-bottom: 12px;
+//   padding-left: 16px;
+//   margin-top: 4px;
+
+//   border: 1px solid $black-alfa-02;
+//   border-radius: 4px;
+
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 1.14;
+//   letter-spacing: 0.01em;
+
+//   &:focus {
+//     outline: none;
+//     border-color: $main-blue;
+//   }
+
+//   &::placeholder {
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//     color: $black-alfa-05;
+//   }
+// }
+
+// .modal-form__checkbox-link {
+//   color: $main-blue;
+// }
+
+// /* =============================================CUSTOM CHECKBOX========================================== */
+// .modal-form__checkbox-label {
+//   display: flex;
+//   align-items: center;
+
+//   font-size: 14px;
+//   /* line-height: 1.71; */
+//   line-height: 1;
+//   color: $main-gray;
+
+//   &::before {
+//     display: block;
+//     content: '';
+//     width: 16px;
+//     height: 16px;
+//     cursor: pointer;
+//     margin-right: 8px;
+//     border-radius: 2px;
+
+//     border: 2px solid $main-black;
+//   }
+// }
+
+// .modal-form__checkbox:checked + .modal-form__checkbox-label::before {
+//   background-image: url('../images/icon-checkbox.svg');
+//   background-color: $main-blue;
+//   border: transparent;
+// }
+
+// .modal-form__checbox-wrapper {
+//   position: relative;
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .modal-form__checkbox {
+//   position: absolute;
+//   bottom: 0;
+//   left: 10px;
+// }
+
+// /* =============================================CUSTOM CHECKBOX========================================== */
+
+// .modal-form__base-button {
+//   margin-top: 30px;
+//   padding-top: 10px;
+//   padding-right: 56px;
+//   padding-bottom: 10px;
+//   padding-left: 56px;
+
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+
+//   color: $main-white;
+//   background-color: $main-blue;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+//   &:hover,
+//   &:focus {
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     background-color: $hover-blue;
+//   }
+// }
+
+// // =========================================Mobile-modal====================================
+// .backdrop-mobile {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+//   width: 100%;
+//   height: 100%;
+
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: auto;
+
+//   transition-property: opacity;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   background-color: rgba(0, 0, 0, 0.2);
+// }
+
+// .backdrop-mobile.is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+
+// .modal-window-mobile {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+
+//   transform: translate(-50%, -50%);
+
+//   border-radius: 4px;
+
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   background-color: $main-white;
+// }
+
+// .close-btn-mobile {
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 30px;
+//   height: 30px;
+//   right: 8px;
+//   top: 8px;
+
+//   background: $main-white;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   cursor: pointer;
+
+//   &:hover .close-btn__icon {
+//     fill: $main-blue;
+//   }
+// }
+// .close-btn-mobile__icon {
+//   width: 11px;
+//   height: 11px;
+// }
+
+// .modal-form-mobile {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   padding: 40px;
+// }

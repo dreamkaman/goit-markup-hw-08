@@ -47,6 +47,54 @@
 // }
 
 @media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list__link {
+    display: inline-block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: $main-black;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      color: $main-blue;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .nav-list__link--current {
+    color: $main-blue;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: $main-blue;
+    }
+  }
+
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 // .header-nav {
 //   display: flex;
