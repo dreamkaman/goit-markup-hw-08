@@ -1,0 +1,26 @@
+.mobile-menu-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  background-color: $main-white;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-window {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu-window {
+    display: none;
+  }
+}

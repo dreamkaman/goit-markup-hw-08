@@ -73,6 +73,36 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.mobile-menu-button__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-button:hover .mobile-menu-button__icon,
+.mobile-menu-button:focus .mobile-menu-button__icon {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
 .base-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1587,5 +1617,30 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 40px;
+}
+
+.mobile-menu-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-window {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu-window {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
