@@ -76,6 +76,43 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .base-section--hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        90deg,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bg.png');
+    background-size: cover;
+
+    background-color: $background-hero;
+
+    color: $main-white;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 700px;
+  }
+
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 // .base-section--hero {
