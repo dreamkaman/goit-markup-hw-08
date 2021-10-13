@@ -164,6 +164,7 @@ ul {
     max-width: 700px;
   }
   .hero__title {
+    max-width: 700px;
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
