@@ -16,6 +16,7 @@
 
 .mobile-menu {
   position: fixed;
+  z-index: 101;
   left: 0;
   top: 0;
   background-color: $main-white;
@@ -61,7 +62,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
 
-  margin-bottom: 302px;
+  margin-bottom: 202px;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -94,7 +95,7 @@
 
 .mobile-menu__contact-link:hover,
 .mobile-menu__contact-link:focus {
-  font-size: 40px;
+  font-size: 34px;
   text-decoration: none;
 
   color: $main-blue;

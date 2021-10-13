@@ -554,6 +554,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .base-section--services {
+    display: flex;
     padding-top: 0;
   }
   .services-list {
@@ -2278,6 +2279,7 @@ ul {
 
 .mobile-menu {
   position: fixed;
+  z-index: 101;
   left: 0;
   top: 0;
   background-color: #ffffff;
@@ -2313,7 +2315,7 @@ ul {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 302px;
+  margin-bottom: 202px;
 }
 
 .mobile-menu-list__item:not(:last-child) {
@@ -2345,7 +2347,7 @@ ul {
 
 .mobile-menu__contact-link:hover,
 .mobile-menu__contact-link:focus {
-  font-size: 40px;
+  font-size: 34px;
   text-decoration: none;
   color: #2196f3;
 }
