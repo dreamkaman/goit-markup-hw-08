@@ -1273,6 +1273,7 @@ ul {
   }
   .footer-content_left-side-left-part {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
     /* margin-right: 86px; */
   }
   .footer-content__logo {
@@ -2476,7 +2477,7 @@ ul {
   margin-bottom: 64px;
 }
 
-.mobile-menu__contact-link {
+.mobile-menu__contact-link2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -2485,9 +2486,11 @@ ul {
   color: #757575;
 }
 
-.mobile-menu__contact-link:hover,
-.mobile-menu__contact-link:focus {
+.mobile-menu__contact-link1 {
   font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
 }

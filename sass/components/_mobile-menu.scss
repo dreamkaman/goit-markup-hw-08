@@ -83,7 +83,7 @@
   margin-bottom: 64px;
 }
 
-.mobile-menu__contact-link {
+.mobile-menu__contact-link2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -93,9 +93,11 @@
   color: $main-gray;
 }
 
-.mobile-menu__contact-link:hover,
-.mobile-menu__contact-link:focus {
+.mobile-menu__contact-link1 {
   font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   text-decoration: none;
 
   color: $main-blue;
