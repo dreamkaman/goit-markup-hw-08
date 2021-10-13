@@ -139,15 +139,24 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="services-list">
                     <li class="services-list__item">
-                        <img class="services-list__image" src="./images/coding.jpeg" alt="Грамотний код" width="370">
+                        <img class="services-list__image" 
+                        srcset="./images/services/img1.jpg 1x, ./images/services/img1-2x.jpg 2x"
+
+                        src="./images/services/img1.jpg" alt="Грамотний код" width="370">
                         <h3 class="services-list__title">Десктопные приложения</h3>
                     </li>
                     <li class="services-list__item">
-                        <img class="services-list__image" src="./images/mobileapp.jpeg" alt="Мобильные приложения" width="370">
+                        <img class="services-list__image" 
+                        srcset="./images/services/img2.jpg 1x, ./images/services/img2-2x.jpg 2x"
+
+                        src="./images/services/img2.jpg " alt="Мобильные приложения" width="370">
                         <h3 class="services-list__title">Мобильные приложения</h3>
                     </li>
                     <li class="services-list__item">
-                        <img class="services-list__image" src="./images/design.jpeg" alt="Дизайн сайтов" width="370">
+                        <img class="services-list__image" 
+                        srcset="./images/services/img3.jpg 1x, ./images/services/img3-2x.jpg 2x"
+
+                        src="./images/services/img3.jpg" alt="Дизайн сайтов" width="370">
                         <h3 class="services-list__title">Дизайнерские решения</h3>
                     </li>
                 </ul>
@@ -160,7 +169,14 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img class="team-list__item-image" src="./images/demianenko.jpeg" alt="Фото Игоря Демьяненко" width="270">
+                    <picture>
+                            <source srcset="./images/team/team1.jpeg 1x, ./images/team/team1-2x.jpg 2x" media="min-width: 1200px">
+                            <source srcset="./images/team/team1-tablet.jpg 1x, ./images/team/team1-tablet2x.jpg 2x" media="min-width: 768px">
+                            <source srcset="./images/team/team1-mobile.jpg 1x, ./images/team/team1-mobile2x.jpg 2x">
+                            <img class="team-list__item-image" 
+                            src="./images/team/team1.jpg " alt="Фото Игоря Демьяненко" width="270">
+                    </picture>
+                        
                         <div class="team-list_item-description">
                             <h3 class="team-list__item-name">Игорь Демьяненко</h3>
                             <p class="team-list__item-position" lang="En">Product Designer</p>
@@ -201,7 +217,12 @@
                         
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__item-image" src="./images/repina.jpeg" alt="Фото Ольги Репниной" width="270">
+                        <picture>
+                            <source srcset="./images/team/team2.jpeg 1x, ./images/team/team2-2x.jpg 2x" media="min-width: 1200px">
+                            <source srcset="./images/team/team2-tablet.jpg 1x, ./images/team/team2-tablet2x.jpg 2x" media="min-width: 768px">
+                            <source srcset="./images/team/team2-mobile.jpg 1x, ./images/team/team2-mobile2x.jpg 2x">
+                            <img class="team-list__item-image" src="./images/team/team2.jpg" alt="Фото Ольги Репиной" width="270">
+                        </picture>
                         <div class="team-list_item-description">
                             <h3 class="team-list__item-name">Ольга Репина</h3>
                             <p class="team-list__item-position" lang="En">Frontend Developer</p>
@@ -241,7 +262,12 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__item-image" src="./images/tarasov.jpeg" alt="Фото Николая Тарасова" width="270">
+                        <picture>
+                            <source srcset="./images/team/team3.jpeg 1x, ./images/team/team3-2x.jpg 2x" media="min-width: 1200px">
+                            <source srcset="./images/team/team3-tablet.jpg 1x, ./images/team/team3-tablet2x.jpg 2x" media="min-width: 768px">
+                            <source srcset="./images/team/team3-mobile.jpg 1x, ./images/team/team3-mobile2x.jpg 2x">
+                            <img class="team-list__item-image" src="./images/team/team3.jpg" alt="Фото Николая Тарасова" width="270">
+                        </picture>
                         <div class="team-list_item-description">
                             <h3 class="team-list__item-name">Николай Тарасов</h3>
                             <p class="team-list__item-position" lang="En">Marketing</p>
@@ -282,7 +308,12 @@
                         
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__item-image" src="./images/ermakov.jpeg" alt="Фото Михаила Ермакова" width="270">
+                        <picture>
+                            <source srcset="./images/team/team4.jpeg 1x, ./images/team/team4-2x.jpg 2x" media="min-width: 1200px">
+                            <source srcset="./images/team/team4-tablet.jpg 1x, ./images/team/team4-tablet2x.jpg 2x" media="min-width: 768px">
+                            <source srcset="./images/team/team4-mobile.jpg 1x, ./images/team/team4-mobile2x.jpg 2x">
+                            <img class="team-list__item-image" src="./images/team/team4.jpg" alt="Фото Михаила Ермакова" width="270">
+                        </picture>
                         <div class="team-list_item-description">
                             <h3 class="team-list__item-name">Михаил Ермаков</h3>
                             <p class="team-list__item-position" lang="En">UI Designer</p>
